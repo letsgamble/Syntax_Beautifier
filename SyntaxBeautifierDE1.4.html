@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Syntax_BeautifierDE 1.4</title>
+  <meta name="description" content="Tool designed for KW Rule Writers">
+  <meta name="author" content="Kamil Wesolowski @kawesolo">
+</head>
+<style>
+/* CSS */
+body {background-color: #ebebeb;}
+div.p2 {
+  text-align: left;
+  font-family: Georgia;
+}
+h1   {color: gray;}
+p    {color: #474747; font-size: 36px; text-align: left;}
+.center {margin-left: auto; margin-right: auto;}
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+.button-8 {
+  background-color: #ff0066;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #e6005c;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #ff0066;
+  box-shadow: none;
+}
+</style>
+<body>
+<table class="center">
+<thead>
+<tr>
+<th>
+<p>Syntax_BeautifierDE 1.4</p>
+<textarea rows="15" cols="60" id="demoInput" placeholder="Enter your text"></textarea>
+<script>
+function myFunction()
+{
+var str=document.getElementById("demoInput").value; 
+var text1 = document.getElementById("demoInput");
+var text2 = document.getElementById("demoInput2");
+text2.value = text1.value;
+var broaden = document.getElementById("broaden");
+
+var n=str.
+replaceAll("(a|ae|ä)","(tempFillA|ae?)").
+replaceAll("(a|ä|ae)","(tempFillA|ae?)").
+replaceAll("(ae|a|ä)","(tempFillA|ae?)").
+replaceAll("(ae|ä|a)","(tempFillA|ae?)").
+replaceAll("(ä|ae|a)","(tempFillA|ae?)").
+replaceAll("(ä|a|ae)","(tempFillA|ae?)").
+replaceAll("(a|ä)","(tempFillA|ae?)").
+replaceAll("(a|ae)","(tempFillA|ae?)").
+replaceAll("(ä|a)","(tempFillA|ae?)").
+replaceAll("(ä|ae)","(tempFillA|ae?)").
+replaceAll("(ae|ä)","(tempFillA|ae?)").
+replaceAll("(ae|a)","(tempFillA|ae?)").
+replaceAll("(a|ae?|ä)","(tempFillA|ae?)").
+replaceAll("(a|ä|ae?)","(tempFillA|ae?)").
+replaceAll("(ae?|a|ä)","(tempFillA|ae?)").
+replaceAll("(ae?|ä|a)","(tempFillA|ae?)").
+replaceAll("(ä|ae?|a)","(tempFillA|ae?)").
+replaceAll("(ä|a|ae?)","(tempFillA|ae?)").
+replaceAll("(a|ae?)","(tempFillA|ae?)").
+replaceAll("(ä|ae?)","(tempFillA|ae?)").
+replaceAll("(ae?|ä)","(tempFillA|ae?)").
+replaceAll("(ae?|a)","(tempFillA|ae?)").
+replaceAll("(ä|aa)","(tempFillA|ae?)").
+
+replaceAll("(u|ue|ü)","(tempFillU|ue?)").
+replaceAll("(u|ü|ue)","(tempFillU|ue?)").
+replaceAll("(ue|u|ü)","(tempFillU|ue?)").
+replaceAll("(ue|ü|u)","(tempFillU|ue?)").
+replaceAll("(ü|ue|u)","(tempFillU|ue?)").
+replaceAll("(ü|u|ue)","(tempFillU|ue?)").
+replaceAll("(ü|u|ee)","(tempFillU|ue?)").
+replaceAll("(u|ü)","(tempFillU|ue?)").
+replaceAll("(u|ue)","(tempFillU|ue?)").
+replaceAll("(ü|u)","(tempFillU|ue?)").
+replaceAll("(ü|ue)","(tempFillU|ue?)").
+replaceAll("(ue|ü)","(tempFillU|ue?)").
+replaceAll("(ue|u)","(tempFillU|ue?)").
+replaceAll("(u|ue?|ü)","(tempFillU|ue?)").
+replaceAll("(u|ü|ue?)","(tempFillU|ue?)").
+replaceAll("(ue?|u|ü)","(tempFillU|ue?)").
+replaceAll("(ue?|ü|u)","(tempFillU|ue?)").
+replaceAll("(ü|ue?|u)","(tempFillU|ue?)").
+replaceAll("(ü|u|ue)?","(tempFillU|ue?)").
+replaceAll("(u|ue?)","(tempFillU|ue?)").
+replaceAll("(ü|ue?)","(tempFillU|ue?)").
+replaceAll("(ue?|ü)","(tempFillU|ue?)").
+replaceAll("(ue?|u)","(tempFillU|ue?)").
+
+replaceAll("(o|oe|ö)","(tempFillO|oe?)").
+replaceAll("(o|ö|oe)","(tempFillO|oe?)").
+replaceAll("(oe|o|ö)","(tempFillO|oe?)").
+replaceAll("(oe|ö|o)","(tempFillO|oe?)").
+replaceAll("(ö|oe|o)","(tempFillO|oe?)").
+replaceAll("(ö|o|oe)","(tempFillO|oe?)").
+replaceAll("(o|ö)","(tempFillO|oe?)").
+replaceAll("(o|oe)","(tempFillO|oe?)").
+replaceAll("(ö|o)","(tempFillO|oe?)").
+replaceAll("(ö|oe)","(tempFillO|oe?)").
+replaceAll("(oe|ö)","(tempFillO|oe?)").
+replaceAll("(oe|o)","(tempFillO|oe?)").
+replaceAll("(o|oe?|ö)","(tempFillO|oe?)").
+replaceAll("(o|ö|oe?)","(tempFillO|oe?)").
+replaceAll("(oe?|o|ö)","(tempFillO|oe?)").
+replaceAll("(oe?|ö|o)","(tempFillO|oe?)").
+replaceAll("(ö|oe?|o)","(tempFillO|oe?)").
+replaceAll("(ö|o|oe?)","(tempFillO|oe?)").
+replaceAll("(o|oe?)","(tempFillO|oe?)").
+replaceAll("(ö|oe?)","(tempFillO|oe?)").
+replaceAll("(oe?|ö)","(tempFillO|oe?)").
+replaceAll("(oe?|o)","(tempFillO|oe?)").
+
+replaceAll("(ß|ss)","(tempFillB|b|ss?)").
+replaceAll("(ss|ß)","(tempFillB|b|ss?)").
+replaceAll("(ß|s|ss)","(tempFillB|b|ss?)").
+replaceAll("(ß|ss|s)","(tempFillB|b|ss?)").
+replaceAll("(s|ss|ß)","(tempFillB|b|ss?)").
+replaceAll("(s|ß|ss)","(tempFillB|b|ss?)").
+replaceAll("(ss|ß|s)","(tempFillB|b|ss?)").
+replaceAll("(ss|s|ß)","(tempFillB|b|ss?)").
+replaceAll("(ß|ss?)","(tempFillB|b|ss?)").
+replaceAll("(ss?|ß)","(tempFillB|b|ss?)").
+replaceAll("(ß|s|ss?)","(tempFillB|b|ss?)").
+replaceAll("(ß|ss?|s)","(tempFillB|b|ss?)").
+replaceAll("(s|ss?|ß)","(tempFillB|b|ss?)").
+replaceAll("(s|ß|ss?)","(tempFillB|b|ss?)").
+replaceAll("(ss?|ß|s)","(tempFillB|b|ss?)").
+replaceAll("(ss?|s|ß)","(tempFillB|b|ss?)").
+replaceAll("(ß|ss?|b)","(tempFillB|b|ss?)").
+replaceAll("(ß|b|ss?)","(tempFillB|b|ss?)").
+replaceAll("(ß|ss?|b)","(tempFillB|b|ss?)").
+replaceAll("(ss?|ß|b)","(tempFillB|b|ss?)").
+replaceAll("(ss?|b|ß)","(tempFillB|b|ss?)").
+replaceAll("(b|ss?|ß)","(tempFillB|b|ss?)").
+replaceAll("(b|ß|ss?)","(tempFillB|b|ss?)").
+
+replace(/ä/gi,"(ä|ae?)").
+replace(/ü/gi,"(ü|ue?)").
+replace(/ö/gi,"(ö|oe?)").
+replace(/ß/gi,"(ß|ss?)").
+
+replace(/:1:/g,broaden.value).
+replace(/:2:/g,broaden.value).
+replace(/:3:/g,broaden.value).
+replace(/:4:/g,broaden.value).
+replace(/:5:/g,broaden.value).
+
+replaceAll("tempFillA","ä").
+replaceAll("tempFillU","ü").
+replaceAll("tempFillO","ö").
+replaceAll("tempFillB","ß").
+
+replaceAll("[title:","[distinctive_title:").
+replaceAll("[title|","[").
+replaceAll("|title|","|").
+replaceAll("[TITLE:","[distinctive_title:").
+replaceAll("[TITLE|","[").
+replaceAll("|TITLE|","|").
+
+replaceAll("[item_name:","[item_name|deprecated_display_item_name|distinctive_title:").
+replaceAll("[Item_name:","[item_name|deprecated_display_item_name|distinctive_title:");
+
+document.getElementById("demoOutcome").value=n;
+}
+function copy() {
+  let textarea = document.getElementById("demoOutcome");
+  textarea.select();
+  document.execCommand("copy");
+}
+</script>
+<th><br><br>
+<div class="p2">How it works:<BR>
+1) removed/replaced title attribute<BR>
+2) ä/ü/ö/ß replaced with approperiate e.g. (ä|ae?)<BR>
+3) all :1-5: broaden to <input size="1" type="text" id="broaden" name="broaden" value=":6:" pattern="[0-9]+">
+<BR>
+4) if there is 'item_name' alone, it will be joined with<BR>deprecated_display_item_name and distinctive_title<BR><BR><BR></div>
+<button class="button-7" onclick="myFunction()">Beautify</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button-8" onClick="window.location.reload();">Reset</button>
+</th>
+</tr>
+<tbody>
+<tr>
+<td>
+<textarea readonly rows="15" cols="60" id="demoInput2"></textarea><br><br><br>For further ideas or encountered bugs contact me at
+</td>
+<td>
+<textarea readonly rows="15" cols="60" id="demoOutcome"></textarea><br>
+<button onclick="copy()">Copy output</button><br><br>
+<a href="mailto:kawesolo@amazon.pl" target="_blank">kawesolo@amazon.pl</a>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
